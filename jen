@@ -1,0 +1,2 @@
+#!/bin/bash
+python /location/of/jen.py "$@"
