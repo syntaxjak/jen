@@ -26,8 +26,8 @@ def configure():
     else:
         print("Invalid mode. Defaulting to conversation mode.")
     
-    # Save to config.json
-    with open('/home/killswitch/config.json', 'w') as config_file:
+    # Save to config.json in the current directory
+    with open('config.json', 'w') as config_file:
         json.dump(config, config_file, indent=4)
 
     print("Configuration has been saved to config.json")
