@@ -61,7 +61,7 @@ def main(question, config):
         print(f"Jen: {reply}")
 
 if __name__ == "__main__":
-    with open('/home/killswitch/config.json') as config_file:
+    with open('config.json', 'r') as config_file:
         config = json.load(config_file)
 
     if config['mode'] == "single" and len(sys.argv) < 2:
